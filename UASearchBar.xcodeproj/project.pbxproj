@@ -21,6 +21,11 @@
 		8042BA71192CA992006DE629 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8042BA53192CA992006DE629 /* UIKit.framework */; };
 		8042BA79192CA992006DE629 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8042BA77192CA992006DE629 /* InfoPlist.strings */; };
 		8042BA7B192CA992006DE629 /* UASearchBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042BA7A192CA992006DE629 /* UASearchBarTests.m */; };
+		8042BA87192CAA01006DE629 /* UASearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042BA86192CAA01006DE629 /* UASearchBar.m */; };
+		8042BA8A192CB56B006DE629 /* ico-magnifier.png in Resources */ = {isa = PBXBuildFile; fileRef = 8042BA88192CB56B006DE629 /* ico-magnifier.png */; };
+		8042BA8B192CB56B006DE629 /* ico-magnifier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8042BA89192CB56B006DE629 /* ico-magnifier@2x.png */; };
+		80C3B03D1936FF1800E1E87A /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C3B03C1936FF1800E1E87A /* UITextField+PlaceholderColor.m */; };
+		80C3B03E1936FF1800E1E87A /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C3B03C1936FF1800E1E87A /* UITextField+PlaceholderColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		8042BA76192CA992006DE629 /* UASearchBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UASearchBarTests-Info.plist"; sourceTree = "<group>"; };
 		8042BA78192CA992006DE629 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8042BA7A192CA992006DE629 /* UASearchBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UASearchBarTests.m; sourceTree = "<group>"; };
+		8042BA85192CAA01006DE629 /* UASearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASearchBar.h; sourceTree = "<group>"; };
+		8042BA86192CAA01006DE629 /* UASearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UASearchBar.m; sourceTree = "<group>"; };
+		8042BA88192CB56B006DE629 /* ico-magnifier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-magnifier.png"; sourceTree = "<group>"; };
+		8042BA89192CB56B006DE629 /* ico-magnifier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-magnifier@2x.png"; sourceTree = "<group>"; };
+		80C3B0391936FC6600E1E87A /* UASearchBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASearchBarDelegate.h; sourceTree = "<group>"; };
+		80C3B03B1936FF1800E1E87A /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
+		80C3B03C1936FF1800E1E87A /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		8042BA55192CA992006DE629 /* UASearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				8042BA84192CA9C1006DE629 /* UASearchBar */,
 				8042BA5E192CA992006DE629 /* UAAppDelegate.h */,
 				8042BA5F192CA992006DE629 /* UAAppDelegate.m */,
 				8042BA61192CA992006DE629 /* Main.storyboard */,
@@ -150,6 +163,28 @@
 				8042BA77192CA992006DE629 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8042BA84192CA9C1006DE629 /* UASearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				80C3B03A1936FF1800E1E87A /* UATextField */,
+				8042BA88192CB56B006DE629 /* ico-magnifier.png */,
+				8042BA89192CB56B006DE629 /* ico-magnifier@2x.png */,
+				80C3B0391936FC6600E1E87A /* UASearchBarDelegate.h */,
+				8042BA85192CAA01006DE629 /* UASearchBar.h */,
+				8042BA86192CAA01006DE629 /* UASearchBar.m */,
+			);
+			path = UASearchBar;
+			sourceTree = "<group>";
+		};
+		80C3B03A1936FF1800E1E87A /* UATextField */ = {
+			isa = PBXGroup;
+			children = (
+				80C3B03B1936FF1800E1E87A /* UITextField+PlaceholderColor.h */,
+				80C3B03C1936FF1800E1E87A /* UITextField+PlaceholderColor.m */,
+			);
+			path = UATextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8042BA8B192CB56B006DE629 /* ico-magnifier@2x.png in Resources */,
 				8042BA68192CA992006DE629 /* Images.xcassets in Resources */,
 				8042BA5A192CA992006DE629 /* InfoPlist.strings in Resources */,
+				8042BA8A192CB56B006DE629 /* ico-magnifier.png in Resources */,
 				8042BA63192CA992006DE629 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8042BA60192CA992006DE629 /* UAAppDelegate.m in Sources */,
+				8042BA87192CAA01006DE629 /* UASearchBar.m in Sources */,
 				8042BA5C192CA992006DE629 /* main.m in Sources */,
 				8042BA66192CA992006DE629 /* UAViewController.m in Sources */,
+				80C3B03D1936FF1800E1E87A /* UITextField+PlaceholderColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8042BA7B192CA992006DE629 /* UASearchBarTests.m in Sources */,
+				80C3B03E1936FF1800E1E87A /* UITextField+PlaceholderColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +497,7 @@
 				8042BA80192CA992006DE629 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8042BA81192CA992006DE629 /* Build configuration list for PBXNativeTarget "UASearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +506,7 @@
 				8042BA83192CA992006DE629 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

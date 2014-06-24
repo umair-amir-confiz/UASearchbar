@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UASearchBar.h"
 
-@interface UAViewController : UIViewController
+@interface UAViewController : UIViewController <UASearchBarDelegate> {
+    
+    __weak IBOutlet UITextView *textView;
+}
 
 @end
