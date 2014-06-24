@@ -18,14 +18,21 @@
 
 @property (nonatomic, strong) NSString *text;
 
+// user can set his own search icon
 -(void)setSearchIcon:(NSString *)icon;
+// show cancel button animated
 -(void)setShowsCancelButton:(BOOL)show;
 -(void)setShowsCancelButton:(BOOL)show animated:(BOOL)animated;
+// chance cancel button title color
 -(void)setCancelButtonTitleColor:(UIColor *)color forState:(UIControlState)state;
+// change cancel button color
 -(void)setCancelButtonTintColor:(UIColor *)color;
 -(void)setCancelButtonBackgroundColor:(UIColor *)color;
+// change captilization mode
 -(void)setAutoCapitalizationMode:(UITextAutocapitalizationType)type;
+// can change placeholder color
 -(void)setPlaceHolderColor:(UIColor*)color;
+// change cancel button title
 -(void)setCancelButtonTitle:(NSString *)title forState:(UIControlState)state;
 
 @end
